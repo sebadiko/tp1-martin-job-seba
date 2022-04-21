@@ -1,0 +1,22 @@
+{
+  "name": "tp1-martin-job-seba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jest.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebadiko/tp1-martin-job-seba.git"
+  },
+  "author": "jones,monzon,dikowiec",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sebadiko/tp1-martin-job-seba/issues"
+  },
+  "homepage": "https://github.com/sebadiko/tp1-martin-job-seba#readme"
+}
