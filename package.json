@@ -7,8 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
+  "test": "jest",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sebadiko/tp1-martin-job-seba.git"
