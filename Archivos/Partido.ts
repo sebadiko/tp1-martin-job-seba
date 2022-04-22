@@ -9,8 +9,9 @@ export class Partido {
     public equipoVisitante: Equipo;
     public finalizar: boolean;
     public partidos: Partido[] = [];
-    public ArbitrosPartidos: Array<Arbitros>;
-    public ArbitrosVar: Array<Arbitros>;
+    public ArbitrosPartidos: Arbitros[] = [];
+    public ArbitrosVar: Arbitros[] = [];
+    public partidoIniciado: boolean = false; 
 
     constructor() {
     }
@@ -167,30 +168,15 @@ export class Partido {
         let pArbitro = new Arbitros(pNombre)
         this.ArbitrosPartidos.push(pArbitro)
     }
+
     public CrearArbitrosVar(pNombre: string){
         let pArbitro = new Arbitros(pNombre)
         this.ArbitrosVar.push(pArbitro)
     }
 
-    public PartidosConArbitros(pNum: Number, pGrupo: Grupo, pLocal: Equipo, pVisitante: Equipo, pArbitrosPartidos: Array<Arbitros>, pArbitrosVar: Array<Arbitros>) {
-        if (pLocal != pVisitante) {
-            for (let i = 0; i < 4; i++) {
-                if (pGrupo.Equipos[i].getNombre() == pLocal.getNombre()) {
-                    for (let j = 0; j < 4; j++) {
-                        if (pGrupo.Equipos[j].getNombre() == pVisitante.getNombre()) {
-                            if (pArbitrosPartidos.length <= 3 && pArbitrosVar.length <= 3) {
-                                this.numPartido = pNum;
-                                this.grupo = pGrupo;
-                                this.equipoLocal = pLocal;
-                                this.equipoVisitante = pVisitante;
-                                this.finalizar = false;
-                                this.ArbitrosPartidos = pArbitrosPartidos;
-                                this.ArbitrosVar = pArbitrosVar;
-                            }
-                        }
-                    }
-                }
-            }
+    public IniciarPartido() {
+        if (this.ArbitrosVar.length >= 3 && this.ArbitrosPartidos.length >= 3){
+            this.partidoIniciado = true;
         }
     }
 }

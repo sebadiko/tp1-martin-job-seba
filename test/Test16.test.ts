@@ -13,8 +13,18 @@ test('16_Cuando_Partidos_Deberia_Empezar_Con_3JuecesPartido_3JuecesVar', () => {
     const visitante = new Equipo("Mexico", "MX");
 
     const partido = new Partido();
-    partido.PartidosConArbitros(1, g, local, visitante, 3, 3);
+    partido.creacionPartidos(1, g, local, visitante);
 
-    expect(partido.ArbitrosPartidos.toString(3));
-    expect(partido.ArbitrosVar.toString(3));
+    partido.CrearArbitrosPartidos("Juan");
+    partido.CrearArbitrosPartidos("Miguel");
+    partido.CrearArbitrosPartidos("Luis");
+
+    partido.CrearArbitrosVar("Pedro");
+    partido.CrearArbitrosVar("Jose");
+    partido.CrearArbitrosVar("Esteban");
+
+    partido.IniciarPartido();
+    expect(partido.partidoIniciado).toBe(true);
+
+
 });
