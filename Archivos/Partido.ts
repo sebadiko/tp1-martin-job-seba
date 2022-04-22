@@ -8,6 +8,8 @@ export class Partido {
     public equipoVisitante: Equipo;
     public finalizar: boolean;
     public partidos: Partido[] = [];
+    public ArbitrosPartidos: number;
+    public ArbitrosVar: number;
 
     constructor() {
     }
@@ -153,4 +155,6 @@ export class Partido {
             return 0;
         }
     }
+
+    public PartidosConArbitros(pNum: Number, pGrupo: Grupo, pLocal: Equipo, pVisitante: Equipo, pArbitrosPartidos: number, pArbitrosVar: number) {}
 }
