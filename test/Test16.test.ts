@@ -1,8 +1,6 @@
 import { Equipo } from "../Archivos/Equipo";
 import { Grupo } from "../Archivos/Grupo";
-import { Estadio } from "../Archivos/Estadio";
 import { Partido } from "../Archivos/Partido";
-import { Manager } from "../Archivos/Manager";
 
 test('16_Cuando_Partidos_Deberia_Empezar_Con_3JuecesPartido_3JuecesVar', () => {
     const g = new Grupo("C");
