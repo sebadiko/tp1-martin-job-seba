@@ -760,3 +760,9 @@ test('16_Cuando_Partidos_Deberia_Empezar_Con_3JuecesPartido_3JuecesVar', () => {
     expect(partido.ArbitrosPartidos.toString(3));
     expect(partido.ArbitrosVar.toString(3));
 });
+
+test('11_Cuando_SeCreaUnEstadio_Deberia_Poseer_posicionGeografica_Latitud_Longitud', () => {
+    const estadio = new Estadio("Bombonera", 5, 4);
+    expect(estadio.Latitud).toBe(5);
+    expect(estadio.Longitud).toBe(4);
+});
