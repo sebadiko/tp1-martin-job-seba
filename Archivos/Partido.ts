@@ -17,7 +17,14 @@ export class Partido {
     }
 
     public creacionPartidos(pNum: Number, pGrupo: Grupo, pLocal: Equipo, pVisitante: Equipo) {
-        if (pLocal != pVisitante) {
+        if(pLocal == null){
+            this.equipoVisitante = pVisitante;
+            pVisitante.puntosTotales(3);
+        }else if(pVisitante == null){
+            this.equipoLocal = pLocal;
+            pLocal.puntosTotales(3);
+        }
+        else if (pLocal != pVisitante) {
             for (let i = 0; i < 4; i++) {
                 if (pGrupo.Equipos[i].getNombre() == pLocal.getNombre()) {
                     for (let j = 0; j < 4; j++) {
