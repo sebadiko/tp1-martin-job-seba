@@ -156,5 +156,25 @@ export class Partido {
         }
     }
 
-    public PartidosConArbitros(pNum: Number, pGrupo: Grupo, pLocal: Equipo, pVisitante: Equipo, pArbitrosPartidos: number, pArbitrosVar: number) {}
+    public PartidosConArbitros(pNum: Number, pGrupo: Grupo, pLocal: Equipo, pVisitante: Equipo, pArbitrosPartidos: number, pArbitrosVar: number) {
+        if (pLocal != pVisitante) {
+            for (let i = 0; i < 4; i++) {
+                if (pGrupo.Equipos[i].getNombre() == pLocal.getNombre()) {
+                    for (let j = 0; j < 4; j++) {
+                        if (pGrupo.Equipos[j].getNombre() == pVisitante.getNombre()) {
+                            if (pArbitrosPartidos <= 3 && pArbitrosVar <= 3) {
+                                this.numPartido = pNum;
+                                this.grupo = pGrupo;
+                                this.equipoLocal = pLocal;
+                                this.equipoVisitante = pVisitante;
+                                this.finalizar = false;
+                                this.ArbitrosPartidos = pArbitrosPartidos;
+                                this.ArbitrosVar = pArbitrosVar;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
