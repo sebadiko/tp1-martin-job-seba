@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1650587129116" clover="3.2.0">
-  <project timestamp="1650587129116" name="All files">
-    <metrics statements="304" coveredstatements="302" conditionals="52" coveredconditionals="50" methods="43" coveredmethods="43" elements="399" coveredelements="395" complexity="0" loc="304" ncloc="304" packages="1" files="5" classes="5"/>
+<coverage generated="1650587616773" clover="3.2.0">
+  <project timestamp="1650587616773" name="All files">
+    <metrics statements="304" coveredstatements="302" conditionals="50" coveredconditionals="48" methods="43" coveredmethods="43" elements="397" coveredelements="393" complexity="0" loc="304" ncloc="304" packages="1" files="5" classes="5"/>
     <file name="Equipo.ts" path="C:\Users\Usuario\Desktop\TRABAJO PRACTICO\Trabajo Practico\tp1-martin-job-seba\Archivos\Equipo.ts">
-      <metrics statements="18" coveredstatements="18" conditionals="12" coveredconditionals="12" methods="7" coveredmethods="7"/>
+      <metrics statements="18" coveredstatements="18" conditionals="10" coveredconditionals="10" methods="7" coveredmethods="7"/>
       <line num="3" count="1" type="stmt"/>
       <line num="6" count="517" type="stmt"/>
       <line num="7" count="517" type="stmt"/>
       <line num="8" count="517" type="stmt"/>
       <line num="9" count="517" type="stmt"/>
-      <line num="12" count="517" type="cond" truecount="12" falsecount="0"/>
+      <line num="12" count="517" type="cond" truecount="10" falsecount="0"/>
       <line num="13" count="1" type="stmt"/>
       <line num="14" count="1" type="stmt"/>
-      <line num="16" count="516" type="stmt"/>
-      <line num="17" count="516" type="stmt"/>
-      <line num="23" count="16158" type="stmt"/>
-      <line num="27" count="2" type="stmt"/>
-      <line num="31" count="682" type="stmt"/>
-      <line num="35" count="9" type="stmt"/>
+      <line num="16" count="517" type="stmt"/>
+      <line num="17" count="517" type="stmt"/>
+      <line num="21" count="16158" type="stmt"/>
+      <line num="25" count="2" type="stmt"/>
+      <line num="29" count="682" type="stmt"/>
+      <line num="33" count="9" type="stmt"/>
+      <line num="37" count="986" type="stmt"/>
+      <line num="38" count="986" type="stmt"/>
       <line num="39" count="986" type="stmt"/>
-      <line num="40" count="986" type="stmt"/>
-      <line num="41" count="986" type="stmt"/>
-      <line num="45" count="661" type="stmt"/>
+      <line num="43" count="661" type="stmt"/>
     </file>
     <file name="Estadio.ts" path="C:\Users\Usuario\Desktop\TRABAJO PRACTICO\Trabajo Practico\tp1-martin-job-seba\Archivos\Estadio.ts">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
