@@ -26,5 +26,30 @@ test('16_Cuando_Partidos_Deberia_Empezar_Con_3JuecesPartido_3JuecesVar', () => {
     partido.IniciarPartido();
     expect(partido.partidoIniciado).toBe(true);
 
+});
+
+test('17_Cuando_Partidos_noCompleto_Arbitros_No_Deberia_Empezar', () => {
+    const g = new Grupo("C");
+    g.AgregarEquipo("Argentina", "AR");
+    g.AgregarEquipo("Mexico", "MX");
+    g.AgregarEquipo("Arabia Saudita", "AS");
+    g.AgregarEquipo("Polonia", "PO");
+
+    const local = new Equipo("Argentina", "AR");
+    const visitante = new Equipo("Mexico", "MX");
+
+    const partido = new Partido();
+    partido.creacionPartidos(1, g, local, visitante);
+
+    partido.CrearArbitrosPartidos("Juan");
+    partido.CrearArbitrosPartidos("Miguel");
+    partido.CrearArbitrosPartidos("Luis");
+
+    partido.CrearArbitrosVar("Pedro");
+    partido.CrearArbitrosVar("Jose");
+
+
+    partido.IniciarPartido();
+    expect(partido.partidoIniciado).toBe(false);
 
 });
