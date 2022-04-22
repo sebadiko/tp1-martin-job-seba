@@ -4,9 +4,10 @@ export class Estadio{
     public Longitud: number
     
 
-
-    constructor(pNombre: string){
+    constructor(pNombre: string, pLatitud?: number, pLogitud?: number){
         this.Nombre = pNombre;
+        this.Latitud = pLatitud;
+        this.Longitud = pLogitud;
        
     }
 }
