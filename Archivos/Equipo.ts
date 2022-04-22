@@ -9,7 +9,7 @@ export class Equipo{
     public golSuplementario: number = 0;
 
     constructor(pNombre: string, pCodigo: string){
-        if(pNombre.charAt(0) === "0" || pNombre.charAt(0) === "1" || pNombre.charAt(0) === "2" || pNombre.charAt(0) === "3" || pNombre.charAt(0) === "5" || pNombre.charAt(0) === "6" ||pNombre.charAt(0) === "7"  ||pNombre.charAt(0) == "8" || pNombre.charAt(0) == "9" || pNombre.length>50){
+        if(pNombre.charAt(0) === "0" || pNombre.charAt(0) === "1" || pNombre.charAt(0) === "2" || pNombre.charAt(0) === "3" || pNombre.charAt(0) === "5" || pNombre.charAt(0) === "6" ||pNombre.charAt(0) === "7"  ||pNombre.charAt(0) === "8" || pNombre.charAt(0) === "9" || pNombre.length>50){
             this.nombreEquipo = null;
             this.codigoPais = null;
         }else{
