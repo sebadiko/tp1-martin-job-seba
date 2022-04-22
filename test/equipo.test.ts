@@ -743,3 +743,7 @@ test('901_Cuando_Partidos_Deberia_DevolverLosPartidosDeFinal', () => {
     man.crearSemi();
     expect.arrayContaining(man.crearFinal());
 });
+
+test('10_ Los nombres de los equipos no pueden comenzar con un número y no deben ser mayor a 50 caracteres', () => {
+    let aux = new Equipo()
+});
