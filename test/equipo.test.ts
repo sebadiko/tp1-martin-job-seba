@@ -757,3 +757,4 @@ test('13_ Se debe poder hacer que en un partido un equipo no se presente y autom
     partido.creacionPartidos2(1, local);
     expect(partido.equipoLocal.puntosTotal).toBe(3);
 });
+
