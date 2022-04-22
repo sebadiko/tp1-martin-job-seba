@@ -765,7 +765,7 @@ test('10_ Los nombres de los equipos no pueden comenzar con un número y no debe
 
     expect(partido.ArbitrosPartidos.toString(3));
     expect(partido.ArbitrosVar.toString(3));
-});
+});*/
 
 /*test('11_Cuando_SeCreaUnEstadio_Deberia_Poseer_posicionGeografica_Latitud_Longitud', () => {
     const estadio = new Estadio("Bombonera", 5, 4);
