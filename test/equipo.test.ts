@@ -754,6 +754,6 @@ test('13_ Se debe poder hacer que en un partido un equipo no se presente y autom
     let visitante = new Equipo("Mexico", "MX");
 
     let partido = new Partido();
-    partido.creacionPartidos2(1, local, visitante)
-    expect(partido.equipoLocal.puntosTotal).toBe(0);
+    partido.creacionPartidos2(1, local);
+    expect(partido.equipoLocal.puntosTotal).toBe(3);
 });
