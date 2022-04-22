@@ -744,7 +744,7 @@ test('901_Cuando_Partidos_Deberia_DevolverLosPartidosDeFinal', () => {
     expect.arrayContaining(man.crearFinal());
 });
 
-/*test('16_Cuando_Partidos_Deberia_Empezar_Con_3JuecesPartido_3JuecesVar', () => {
+test('16_Cuando_Partidos_Deberia_Empezar_Con_3JuecesPartido_3JuecesVar', () => {
     const g = new Grupo("C");
     g.AgregarEquipo("Argentina", "AR");
     g.AgregarEquipo("Mexico", "MX");
@@ -761,13 +761,13 @@ test('901_Cuando_Partidos_Deberia_DevolverLosPartidosDeFinal', () => {
     expect(partido.ArbitrosVar.toString(3));
 });
 
-test('11_Cuando_SeCreaUnEstadio_Deberia_Poseer_posicionGeografica_Latitud_Longitud', () => {
+/*test('11_Cuando_SeCreaUnEstadio_Deberia_Poseer_posicionGeografica_Latitud_Longitud', () => {
     const estadio = new Estadio("Bombonera", 5, 4);
     expect(estadio.Latitud).toBe(5);
     expect(estadio.Longitud).toBe(4);
-});*/
+});
 
-test('10_ Los nombres de los equipos no pueden comenzar con un número y no deben ser mayor a 50 caracteres', () => {
+/*test('10_ Los nombres de los equipos no pueden comenzar con un número y no deben ser mayor a 50 caracteres', () => {
     let aux = new Equipo("1Argentina", "AR");
     expect(aux.getNombre()).toBe(null);
-});
+});*/
