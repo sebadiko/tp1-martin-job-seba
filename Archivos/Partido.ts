@@ -32,8 +32,14 @@ export class Partido {
         }
     }
 
-    public creacionPartidos2(pNum: Number, pLocal: Equipo, pVisitante: Equipo) {
-        if (pLocal != pVisitante) {
+    public creacionPartidos2(pNum: Number, pLocal?: Equipo, pVisitante?: Equipo) {
+        if(pLocal == null){
+            this.equipoVisitante = pVisitante;
+            pVisitante.puntosTotales(3);
+        }else if(pVisitante == null){
+            this.equipoLocal = pLocal;
+            pLocal.puntosTotales(3);
+        }else if(pLocal != pVisitante) {
             this.numPartido = pNum;
             this.equipoLocal = pLocal;
             this.equipoVisitante = pVisitante;
